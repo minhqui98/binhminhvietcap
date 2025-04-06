@@ -49,12 +49,8 @@ function ProductScreen() {
   const navigate = useNavigate();
   const params = useParams();
   const { id } = useParams();
-  console.log(data.products, 'data.products');
-
-  console.log(id, 'id');
 
   const product = data.products?.find((p) => p.id === id);
-  console.log(product, 'product');
 
   // const { slug } = params;
 
