@@ -41,7 +41,7 @@ function Product(props) {
       </Link>
       <Card.Body>
         <Link style={{ color: 'black', textDecoration: 'none' }} to={`/product/${product.id}`}>
-          <Card.Title style={{ fontSize: '18px',fontWeight:"bold" }}>{product.name}</Card.Title>
+          <Card.Title style={{ fontSize: '18px', fontWeight: 'bold' }}>{product.name}</Card.Title>
         </Link>
         {/* <Rating rating={product.rating} numReviews={product.numReviews} /> */}
         {/* <Card.Text style={{ color: 'black' }}>
@@ -52,9 +52,18 @@ function Product(props) {
             Out of stock
           </Button>
         ) : (
-          <Link style={{ backgroundColor: 'none',marginTop:50 }} to={`/product/${product.id}`}>
+          <Link style={{ backgroundColor: 'none', marginTop: 50 }} to={`/product/${product.id}`}>
             {/* <Card.Title>{product.name}</Card.Title> */}
-            <Button style={{ borderColor: 'black', color: 'black', backgroundColor: 'transparent', borderRadius: 10,marginTop:20,fontSize:16 }}>
+            <Button
+              style={{
+                borderColor: 'black',
+                color: 'black',
+                backgroundColor: 'transparent',
+                borderRadius: 10,
+                marginTop: 20,
+                fontSize: 17,
+              }}
+            >
               Xem chi tiết
             </Button>
           </Link>

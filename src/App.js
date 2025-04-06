@@ -90,12 +90,10 @@ function App() {
               {/* <Button variant="dark" onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 <i className="fas fa-bars"></i>
               </Button> */}
-              
 
-
-              <LinkContainer to="/" style={{ cursor: 'pointer',borderRadius:"13px" }}>
+              <LinkContainer to="/" style={{ cursor: 'pointer', borderRadius: '13px' }}>
                 {/* <Navbar.Brand>Quí Store</Navbar.Brand> */}
-                <img src={`${process.env.PUBLIC_URL}/images/logo/logo3.jpg`} width={63} height={40}/>
+                <img src={`${process.env.PUBLIC_URL}/images/logo/logo3.jpg`} width={63} height={40} />
               </LinkContainer>
               {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
               <Navbar.Collapse id="basic-navbar-nav">
@@ -293,7 +291,7 @@ function App() {
             </Routes>
           </Container>
         </main>
-        <footer style={{ boxShadow: '10px 2px 10px rgba(0, 0, 0, 0.3)', paddingTop: 10, marginTop: 15 }}>
+        <footer style={{ boxShadow: '10px 2px 10px rgba(0, 0, 0, 0.3)', paddingTop: 10, marginTop: 30 }}>
           {/* <div className="text-center">All rights reserved</div> */}
           <Container>
             <Row>
@@ -319,9 +317,44 @@ function App() {
           <img
             src={`${process.env.PUBLIC_URL}/images/Logo-zalo-png.png`}
             alt="Zalo"
-            className="position-fixed top-50 end-0 translate-middle-y m-3"
-            style={{ width: '50px', height: '50px',backgroundColor:"white",borderRadius:50 }}
+            // className="position-fixed translate-middle-y m-3"
+            // style={{ width: '50px', height: '50px',backgroundColor:"white",borderRadius:50 }}
+            style={{
+              position: 'fixed',
+              bottom: '80px',
+              right: '20px',
+              backgroundColor: 'white',
+              // color: 'white',
+              borderRadius: '35%',
+              width: '50px',
+              height: '50px',
+              // textAlign: 'center',
+              // fontSize: '28px',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+              zIndex: 1000,
+              // paddingTop:"10px"
+            }}
           />
+        </a>
+        <a
+          href="tel:0908467682" // ← Sửa số điện thoại bạn muốn
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            backgroundColor: '#25d366',
+            color: 'white',
+            borderRadius: '35%',
+            width: '50px',
+            height: '50px',
+            textAlign: 'center',
+            fontSize: '28px',
+            boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+            zIndex: 1000,
+            paddingTop: '10px',
+          }}
+        >
+          <i className="fa fa-phone"></i>
         </a>
       </div>
     </BrowserRouter>

@@ -49,13 +49,13 @@ function ProductScreen() {
   const navigate = useNavigate();
   const params = useParams();
   const { id } = useParams();
-  console.log(data.products,"data.products");
-  
-  console.log(id,"id");
-  
+  console.log(data.products, 'data.products');
+
+  console.log(id, 'id');
+
   const product = data.products?.find((p) => p.id === id);
-  console.log(product,"product");
-  
+  console.log(product, 'product');
+
   // const { slug } = params;
 
   // const [{ loading, error, product, loadingCreateReview }, dispatch] = useReducer(reducer, {
@@ -78,12 +78,17 @@ function ProductScreen() {
 
   // const { state, dispatch: ctxDispatch } = useContext(Store);
   // const { cart, userInfo } = state;
-  
+
   return (
-    <div style={{marginTop:66}}>
+    <div style={{ marginTop: 66 }}>
       <Row>
         <Col md={6}>
-          <img style={{borderRadius:10}} className="img-large" src={selectedImage || product.image} alt={product.name}></img>
+          <img
+            style={{ borderRadius: 10 }}
+            className="img-large"
+            src={selectedImage || product.image}
+            alt={product.name}
+          ></img>
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">
@@ -92,7 +97,13 @@ function ProductScreen() {
                 {[product.image, ...product.images].map((x) => (
                   <Col key={x}>
                     <Card style={{ objectFit: 'cover' }}>
-                      <Button style={{border:selectedImage==x ? "2px solid cadetblue":"none"}} className="thumbnail" type="button" variant="light" onClick={() => setSelectedImage(x)}>
+                      <Button
+                        style={{ border: selectedImage == x ? '2px solid cadetblue' : 'none' }}
+                        className="thumbnail"
+                        type="button"
+                        variant="light"
+                        onClick={() => setSelectedImage(x)}
+                      >
                         <Card.Img variant="top" src={x} alt="product" />
                       </Button>
                     </Card>
@@ -104,7 +115,7 @@ function ProductScreen() {
               <Helmet>
                 <title>{product.name}</title>
               </Helmet>
-              <h1 style={{ fontSize: '20px',fontWeight:"bold" }}>{product.name}</h1>
+              <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>{product.name}</h1>
             </ListGroup.Item>
             {/* <ListGroup.Item>
               <Rating rating={product.rating} numReviews={product.numReviews}></Rating>
@@ -113,8 +124,12 @@ function ProductScreen() {
               <span className="text-bold">Giá</span> : ${product.price}
             </ListGroup.Item> */}
             <ListGroup.Item>
-              <span className="text-bold" style={{ fontSize:16 }}>Mô tả:</span>
-              <p style={{ fontStyle: 'italic',fontSize:17 }}>Chất liệu 100% cotton, thêu logo trước sau, khóa nón đủ loại theo size</p>
+              <span className="text-bold" style={{ fontSize: 16 }}>
+                Mô tả:
+              </span>
+              <p style={{ fontStyle: 'italic', fontSize: 18 }}>
+                Chất liệu 100% cotton, thêu logo trước sau, khóa nón đủ loại theo size
+              </p>
             </ListGroup.Item>
           </ListGroup>
         </Col>
@@ -122,14 +137,14 @@ function ProductScreen() {
           <Card>
             <Card.Body>
               <ListGroup variant="flush">
-              <ListGroup.Item>
-                  <p style={{ fontSize:15 }}>* Và còn rất nhiều mẫu mã khác vui lòng liên hệ để biết thêm chi tiết.</p>
-                  <p style={{ fontSize:15 }}>* Nhận đặt nón theo yêu cầu số lượng lớn</p>
+                <ListGroup.Item>
+                  <p style={{ fontSize: 18 }}>* Và còn rất nhiều mẫu mã khác vui lòng liên hệ để biết thêm chi tiết.</p>
+                  <p style={{ fontSize: 18 }}>* Nhận đặt nón theo yêu cầu số lượng lớn</p>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Row>
                     <Col>Giá:</Col>
-                    <Col style={{fontWeight: 'bold' }}>Liên hệ</Col>
+                    <Col style={{ fontWeight: 'bold' }}>Liên hệ</Col>
                   </Row>
                 </ListGroup.Item>
 
@@ -144,7 +159,9 @@ function ProductScreen() {
                 )} */}
                 <ListGroup.Item>
                   <div className="d-grid">
-                    <span style={{ color: '#dd2f2c', fontWeight: 'bold', fontSize: '20px' }}>0908&nbsp;467&nbsp;682 (Nam) </span>
+                    <span style={{ color: '#dd2f2c', fontWeight: 'bold', fontSize: '20px' }}>
+                      0908&nbsp;467&nbsp;682 (Nam){' '}
+                    </span>
                   </div>
                 </ListGroup.Item>
               </ListGroup>
