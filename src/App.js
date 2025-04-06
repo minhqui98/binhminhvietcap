@@ -95,7 +95,7 @@ function App() {
 
               <LinkContainer to="/" style={{ cursor: 'pointer',borderRadius:"13px" }}>
                 {/* <Navbar.Brand>Quí Store</Navbar.Brand> */}
-                <img src="/images/logo/logo3.jpg" width={63} height={40}/>
+                <img src={`${process.env.PUBLIC_URL}/images/logo/logo3.jpg`} width={63} height={40}/>
               </LinkContainer>
               {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
               <Navbar.Collapse id="basic-navbar-nav">
@@ -317,10 +317,10 @@ function App() {
         </footer>
         <a href="https://zalo.me/0908467682" target="_blank" rel="noopener noreferrer">
           <img
-            src="/images/Logo-zalo-png.png"
+            src={`${process.env.PUBLIC_URL}/images/Logo-zalo-png.png`}
             alt="Zalo"
             className="position-fixed top-50 end-0 translate-middle-y m-3"
-            style={{ width: '50px', height: '50px' }}
+            style={{ width: '50px', height: '50px',backgroundColor:"white",borderRadius:50 }}
           />
         </a>
       </div>

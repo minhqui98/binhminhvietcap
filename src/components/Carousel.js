@@ -3,14 +3,14 @@ import { Carousel, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 
 const images = [
-  "/images/carousel/carousel2.jpg",
-  "/images/carousel/carousel3.jpg",
-  "/images/carousel/carousel4.jpg",
-  "/images/carousel/carousel1.jpg",
-  "/images/carousel/carousel8.jpg",
-  "/images/carousel/carousel6.jpg",
-  "/images/carousel/carousel7.jpg",
-  "/images/carousel/carousel5.jpg",
+  `${process.env.PUBLIC_URL}/images/carousel/carousel2.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel3.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel4.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel1.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel8.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel6.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel7.jpg`,
+  `${process.env.PUBLIC_URL}/images/carousel/carousel5.jpg`,
 
   // "https://via.placeholder.com/300x200?text=Image+2",
   // "https://via.placeholder.com/300x200?text=Image+3",
