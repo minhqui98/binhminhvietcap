@@ -1,5 +1,4 @@
 {
-  "homepage": "https://minhqui98.github.io/binhminhvietcap",
   "name": "frontend",
   "proxy": "http://localhost:4000",
   "version": "0.1.0",
