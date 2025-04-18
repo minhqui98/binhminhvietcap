@@ -301,12 +301,12 @@ function App() {
               </Col>
               <Col md={4} className="text-center">
                 <h5 style={{ fontWeight: 'bold' }}>Địa chỉ</h5>
-                <p>123 Đường ABC, Quận 12, TP. HCM</p>
+                <p>153/20 đường TTH20, KP1A, phường Tân Thới Hiệp, Quận 12, TPHCM</p>
               </Col>
               <Col md={4} className="text-center text-md-end">
                 <h5 style={{ fontWeight: 'bold' }}>Liên hệ</h5>
                 <p>📞 0908 467 682</p>
-                <p>📧 contact@abc.com</p>
+                <p>📧 namhoangp2303@gmail.com</p>
               </Col>
             </Row>
             <hr className="my-1 border-light" />
