@@ -52,7 +52,7 @@ function HomeScreen() {
       <div className="banner"></div>
       <UncontrolledExample />
       <h1 style={{ fontSize: '30px', textAlign: 'center', padding: '20px 0' }}>Về Công ty</h1>
-      <p style={{ fontSize: '18px' }}>
+      <p style={{ fontSize: '19px' }}>
         Được thành lập từ những năm đầu 2000, Bình Minh Việt là doanh nghiệp chuyên sản xuất và cung cấp các loại nón
         thời trang, với hơn 20 năm kinh nghiệm trong nghề. Trải qua hành trình dài phát triển, chúng tôi luôn kiên định
         với mục tiêu mang đến những sản phẩm chất lượng cao, giá cả hợp lý và phù hợp với thị hiếu người tiêu dùng trong
@@ -83,6 +83,15 @@ function HomeScreen() {
           ))}
         </Row>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.7093423545753!2d106.63825683271958!3d10.858202980445842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529edb404e6cf%3A0x572e67d6bdaa6906!2sC%C3%B4ng%20ty%20TNHH%20Sunshine%20Vi%E1%BB%87t!5e0!3m2!1svi!2s!4v1773459390826!5m2!1svi!2s"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   );
 }

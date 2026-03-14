@@ -351,10 +351,32 @@ function App() {
             fontSize: '28px',
             boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
             zIndex: 1000,
-            paddingTop: '10px',
           }}
         >
           <i className="fa fa-phone"></i>
+        </a>
+        <a href="https://wa.me/84908467682" target="_blank" rel="noopener noreferrer">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/whatsapp-logo-png.png`}
+            alt="Zalo"
+            // className="position-fixed translate-middle-y m-3"
+            // style={{ width: '50px', height: '50px',backgroundColor:"white",borderRadius:50 }}
+            style={{
+              position: 'fixed',
+              bottom: '140px',
+              right: '20px',
+              backgroundColor: 'white',
+              // color: 'white',
+              borderRadius: '35%',
+              width: '50px',
+              height: '50px',
+              // textAlign: 'center',
+              // fontSize: '28px',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+              zIndex: 1000,
+              // paddingTop:"10px"
+            }}
+          />
         </a>
       </div>
     </BrowserRouter>
